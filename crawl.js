@@ -1,4 +1,4 @@
-
+import { JSDOM } from 'jsdom'
 
 function normalizeURL(url) {
     const urlObj = new URL(url)
@@ -10,3 +10,8 @@ function normalizeURL(url) {
   }
   
   export { normalizeURL }
+
+
+  function getURLsFromHTML(htmlBody, baseURL) {
+
+  }
