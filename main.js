@@ -1,4 +1,5 @@
 import { crawlPage } from "./crawl.js"
+import { printReport } from "./report.js"
 
 
 async function main() {
@@ -14,13 +15,9 @@ async function main() {
 
     console.log(`web crawler starting at ${baseURL}`)
     const pages = await crawlPage(baseURL, baseURL, {})
-
-    for (const page of Object.entries(pages)) {
-        console.log(page)
+    printReport(pages)
     }
 
-
-  }
   
   main()
   
